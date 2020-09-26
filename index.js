@@ -84,13 +84,13 @@ const questionBank = [
   //check weather options are selected or not, initially it should be not selected
   function Check_option(){
     // let selected_element = document.querySelectorAll('input[name="answer"]');
-    // let selected;
+    // let selected = false;    
     // selected_element.forEach((element) => {
     //   if(element.checked){
     //     selected = element.value;
     //   }
     // });
-    // console.log(selected);
+    // return selected;
     let answer_selected = undefined;
     selected_element.forEach(element => {
       if(element.checked){
@@ -128,7 +128,6 @@ const questionBank = [
       else{
         main_quiz.innerHTML = `<h2>quiz completed mate, Your score : ${score} / ${questionBank.length}</h2>
                                <button type="button" class="submit_button" onclick = location.reload()>Reload Quiz</button>`;
-        // main_quiz.style.padding = "5px";     // gave this in css file
       }
     }
 
